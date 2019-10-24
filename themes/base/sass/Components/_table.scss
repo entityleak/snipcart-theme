@@ -30,9 +30,17 @@ $_notice-error--text-color: palette(static, color--highlight);
     text-align: left;
     width: 100%;
 
+    tr{
+      td:first-of-type{
+        width: 100%;
+        align-items: center;
+        display: flex;
+      }
+    }
+
     // [1]
     td, th, tr {
-        border-bottom: $_table-border;
+        // border-bottom: $_table-border;
         padding: inherit;
 
         &.snip-table__row--no-border {
@@ -42,6 +50,39 @@ $_notice-error--text-color: palette(static, color--highlight);
           }
         }
     }
+
+    tr{
+      display: flex;
+      width: $sidebar-width;
+      flex-wrap: wrap;
+    }
+
+    td{
+      padding:1em !important;
+
+      &.snip-customfields{
+        padding: 0 !important;
+      }
+
+      .snipcart-customfield-dropdown{
+        margin: 1em;
+        label{
+          display: none;
+        }
+      }
+    }
+
+    thead{
+      display: none;
+    }
+}
+
+.snip-table__item{
+  // background-color: red;
+  // padding: none;
+  // border: 1px solid grey;
+  // margin: 1rem;
+  border-bottom: 1px solid black;
 }
 
 .snip-table {
@@ -85,7 +126,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 
         tr {
             @include clearfix;
-            padding: $padding-small 0;
+            padding: $padding-xs 0;
             position: relative;
 
             + tr {
@@ -95,7 +136,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 
         td {
             border: 0;
-            padding: $padding-small;
+            padding: $padding-xs;
         }
 
         .snip-table__header {
@@ -214,7 +255,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 .snip-table__small-col {
     @media #{$mq-small} {
         float: left;
-        margin-top: $padding-small * 2;
+        margin-top: $padding-xs * 2;
         text-align: center;
         width: 33.333333%;
 

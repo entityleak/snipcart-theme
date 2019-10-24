@@ -46,10 +46,10 @@ $_product-disabled-opacity: 0.2;
 }
 
 .snip-product__thumbnail {
-    display: none;
+    // display: none;
     float: left;
     height: $_product-thumbnail-size;
-    margin-right: .714em;
+    margin-right: 2em;
     width: $_product-thumbnail-size;
 
     img {
@@ -67,7 +67,7 @@ $_product-disabled-opacity: 0.2;
     color: palette(product, color--highlight);
     font-size: 1.125em;
     overflow: hidden;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
     @media #{$mq-medium} {
         font-size: fontsize(product, base);
@@ -118,6 +118,7 @@ $_product-disabled-opacity: 0.2;
 }
 
 .snip-product__customfields {
+
     @media #{$mq-medium} {
         max-width: $_product-customfield-size;
     }
