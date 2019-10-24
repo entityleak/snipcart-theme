@@ -21,7 +21,7 @@ $_steps-border: 1px solid palette(step, border);
 
 .snip-steps {
     background: palette(step, background);
-    display: block;
+    display: none !important;
     height: $_steps-height / 1.25;
 
     &.snip-steps--4 li {
