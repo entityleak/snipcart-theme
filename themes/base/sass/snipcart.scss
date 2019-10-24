@@ -57,7 +57,8 @@ body.snip-open {
 
 // Base layout
 .snip-layout {
-    background: rgba(123, 123, 123, .75);
+    background: rgba(0, 0, 0, 0.45);
+    // backdrop-filter:blur(10px);
     bottom: 0;
     color: palette(layout, color);
     font-family: $font-base;
@@ -70,6 +71,8 @@ body.snip-open {
     right: 0;
     top: 0;
     z-index: $_base-z-index;
+
+    @import "settings/_layoutvars.scss";
 
     // Compound settings and reset
     @import "settings/_icons.scss";

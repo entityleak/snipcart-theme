@@ -16,6 +16,7 @@ $_footer-height: 35px;
 \*------------------------------------*/
 
 .snip-footer {
+    display: none !important;
     background: palette(footer, background);
     padding: .125em .625em;
     text-transform: uppercase;

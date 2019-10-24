@@ -18,7 +18,13 @@ $_action-border: 1px solid palette(layout, border);
 \*------------------------------------*/
 
 .snip-actions {
-    border-top: $_action-border;
+    height: $actionbar-height;
+    background-color:rgba(255,255,255,1);
+    position: fixed;
+    bottom:0;
+    right: 0;
+    width: $sidebar-width;
+    // border-top: $_action-border;
     padding: $padding-small;
 
     // [1]
