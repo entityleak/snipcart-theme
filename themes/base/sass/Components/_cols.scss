@@ -32,10 +32,10 @@ $_cols-border: 1px solid palette(layout, border);
 
 .snip-col {
     padding: 0 $padding-small $padding-small;
-    
+
     + .snip-col {
-        border-top: $_cols-border;
-        padding-top: $padding-small;
+        // border-top: $_cols-border;
+        // padding-top: $padding-small;
     }
 
     @media #{$mq-medium} {
@@ -43,7 +43,7 @@ $_cols-border: 1px solid palette(layout, border);
         float: left;
         padding: .25em 1.25em;
         width: 33.333333%;
-    
+
         + .snip-col {
             border-left: $_cols-border;
             border-top: 0;
