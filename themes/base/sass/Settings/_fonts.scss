@@ -30,6 +30,9 @@ $font-special: 'hbearial', Arial, sans-serif;
     // font-weight: 700;
 }
 
+@mixin letter-spacing {
+  letter-spacing: 0.01em;
+}
 
 /**
     FONT SIZES
@@ -72,8 +75,8 @@ $fontsize: (
         large: 16px
     ),
     static: (
-        small: 12px,
-        base: 14px
+        small: 16px,
+        base: 20px
     ),
     step: (
         small: 10px,

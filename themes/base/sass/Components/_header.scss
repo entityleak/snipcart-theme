@@ -32,7 +32,7 @@ $_header-total-height: 38px;
     min-height: $header-height;
     font-family: $font-special;
     font-size: fontsize(header, large);
-    @include font-bold;
+    @include letter-spacing;
     background: palette(header, background);
     color: palette(header, color);
     padding: $padding-small;

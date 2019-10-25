@@ -49,11 +49,11 @@ $_product-disabled-opacity: 0.2;
     // display: none;
     float: left;
     height: $_product-thumbnail-size;
-    margin-right: 2em;
-    width: $_product-thumbnail-size;
+    margin-right: 1em;
+    min-width: $_product-thumbnail-size;
 
     img {
-        border-radius: 50%;
+        border-radius: 10px;
         max-height: 100%;
         max-width: 100%;
     }
@@ -65,10 +65,20 @@ $_product-disabled-opacity: 0.2;
 
 .snip-product__name {
     font-family: $font-special;
-    @include font-bold;
+    @include letter-spacing;
     color: palette(product, color--highlight);
     font-size: 20px;
     overflow: hidden;
+    // background-color: grey;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 1em;
+    // display: table;
+    // vertical-align: middle;
+    border-radius: 50px;
+    height: $_product-thumbnail-size;
+    // background-color: #f1f1f1;
+    border: 1px solid black;
     // text-transform: uppercase;
 
     @media #{$mq-medium} {
@@ -102,7 +112,7 @@ $_product-disabled-opacity: 0.2;
     font-size: fontsize(product, icon);
     position: absolute;
     right: 0.5rem;
-    top:0.5rem;
+    top:1rem;
 
     @media #{$mq-small} {
       position: absolute;

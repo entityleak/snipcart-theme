@@ -98,7 +98,7 @@ $_notice-error--text-color: palette(static, color--highlight);
   // padding: none;
   // border: 1px solid grey;
   // margin: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #eee;
   // margin:0.5rem;
   // border-radius: 50px;
 }
@@ -289,4 +289,17 @@ $_notice-error--text-color: palette(static, color--highlight);
             border-left: $_table-border;
         }
     }
+}
+
+#snipcart-fees{
+  tr{
+    padding-bottom: 1.5em !important;
+  }
+}
+#snipcart-total{
+  tr{
+    border-top: 1px solid black;
+    padding-bottom: 1.5em !important;
+
+  }
 }

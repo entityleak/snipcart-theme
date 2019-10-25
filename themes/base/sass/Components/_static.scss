@@ -27,10 +27,12 @@ $_static-border: 1px solid palette(static, border);
 }
 
 .snip-static__title {
-    @include font-bold;
+  @include letter-spacing;
+    font-family: $font-special;
+
     color: palette(static, color--highlight);
-    font-size: 1em;
-    text-transform: uppercase;
+    font-size: fontsize(static, base);
+    text-transform: capitalize;
 }
 
 .snip-static__title--main {
@@ -38,6 +40,7 @@ $_static-border: 1px solid palette(static, border);
 }
 
 .snip-static__content {
+    // font-family: $font-special;
     font-size: fontsize(static, small);
     line-height: 1.6;
     margin-top: 1em;

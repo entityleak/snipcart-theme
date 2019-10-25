@@ -65,7 +65,7 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 }
 
 .snip-layout__content {
-    margin: 1em 0;
+    margin: 1em 0 0 0;
     // max-height: 100vh;
     overflow-y: scroll;
 
@@ -90,7 +90,7 @@ $_layout-content-border: 1px solid palette(layout, content-border);
   // width: 100%;
   height: calc(100vh - #{$actionbar-height} - #{$header-height});
   // background-color: red;
-  padding-bottom: $actionbar-height;
+  padding-bottom: 1em;
   overflow-y: scroll;
   // margin-bottom: 2rem;
 

@@ -64,11 +64,11 @@ $palettes: (
     ),
     layout: (
         background: #fff,
-        border: #eee,
+        border: #000,
         close-color: #000,
         color: #999,
         content-background: #f8f8f8,
-        content-border: #bbb,
+        content-border: #000,
         loading-color: #000
     ),
     loader: (
@@ -92,17 +92,17 @@ $palettes: (
         background--highlight: #f8f8f8,
         border: #eee,
         color--highlight: #000,
-        color--link: #999
+        color--link: #000
     ),
     step: (
         background: #ccc,
         background--active: #fff,
         border: #bbb,
-        color: #999,
+        color: #000,
         color--active: #000
     ),
     table: (
-        background--highlight: #f8f8f8,
+        background--highlight: #fff,
         border: #eee,
         color--highlight: #000,
         color--success: #76d443
