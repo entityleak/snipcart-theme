@@ -4,8 +4,8 @@
     We don't want to load many fonts on your site so we stay classic.
     You can add your custom fonts here and/or define your own fonts family variables.
 */
-$font-base:Arial, sans-serif;
-
+$font-base: Arial, sans-serif;
+$font-special: 'hbearial', Arial, sans-serif;
 
 /**
     ICONS FONT
@@ -27,7 +27,7 @@ $font-base:Arial, sans-serif;
     - add your font-family. Ex: font-family: 'myFont-bold';
 */
 @mixin font-bold {
-    font-weight: 700;
+    // font-weight: 700;
 }
 
 
@@ -39,7 +39,7 @@ $fontsize: (
         small: 12px
     ),
     button: (
-        base: 12px
+        base: 20px
     ),
     error: (
         base: 14px
@@ -51,12 +51,12 @@ $fontsize: (
         base: 10px
     ),
     form: (
-        small: 12px,
+        small: 10px,
         base: 14px
     ),
     header: (
         small: 14px,
-        large: 30px
+        large: 20px
     ),
     product: (
         base: 14px,
@@ -68,7 +68,7 @@ $fontsize: (
         x-large: 22px
     ),
     reset: (
-        base: 14px,
+        base: 16px,
         large: 16px
     ),
     static: (
@@ -81,7 +81,7 @@ $fontsize: (
     ),
     table: (
         small: 12px,
-        base: 14px,
+        base: 16px,
         large: 20px
     ),
     discount: (

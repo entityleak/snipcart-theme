@@ -23,24 +23,24 @@ $palettes: (
     ),
     error: (
         color: #f10,
-        text-color: #333,
+        text-color: #000,
         text-color--invert: #fff
     ),
     badge: (
         background--success: #76d443,
         background--error: #f10,
         background--warn: #efe778,
-        text--success: #333,
+        text--success: #000,
         text--error: #fff,
-        text--warn: #333
+        text--warn: #000
     ),
     flash: (
         background--error: #f10,
         background--success: #76d443,
         background--warning: #efe778,
         background--confirm: #222,
-        border: #333,
-        color: #333,
+        border: #000,
+        color: #000,
         color--invert: #fff
     ),
     footer: (
@@ -50,11 +50,11 @@ $palettes: (
     ),
     form: (
         background: #fff,
-        border: #eee,
-        border--focus: #333,
-        color: #555,
-        color--highlight: #333,
-        label-color: #999
+        border: #ccc,
+        border--focus: #000,
+        color: #000,
+        color--highlight: #000,
+        label-color: #ccc
     ),
     header: (
         background: #fff,
@@ -79,7 +79,7 @@ $palettes: (
         background: #f8f8f8,
         border: #eee,
         color--error: #ccc,
-        color--highlight: #333
+        color--highlight: #000
     ),
     quantity-trigger: (
         background: transparent,
@@ -91,7 +91,7 @@ $palettes: (
     static: (
         background--highlight: #f8f8f8,
         border: #eee,
-        color--highlight: #333,
+        color--highlight: #000,
         color--link: #999
     ),
     step: (
@@ -99,12 +99,12 @@ $palettes: (
         background--active: #fff,
         border: #bbb,
         color: #999,
-        color--active: #333
+        color--active: #000
     ),
     table: (
         background--highlight: #f8f8f8,
         border: #eee,
-        color--highlight: #333,
+        color--highlight: #000,
         color--success: #76d443
     ),
     tooltip: (

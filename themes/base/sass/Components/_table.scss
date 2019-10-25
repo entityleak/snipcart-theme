@@ -35,6 +35,8 @@ $_notice-error--text-color: palette(static, color--highlight);
         width: 100%;
         align-items: center;
         display: flex;
+        padding:0.5rem 0.5rem 0.5rem 0.25 !important;
+
         // border-bottom: 1px solid grey;
         // border-radius: 50px;
 
@@ -60,6 +62,15 @@ $_notice-error--text-color: palette(static, color--highlight);
       flex-wrap: wrap;
       position: relative;
       padding:0.5rem !important;
+
+
+    }
+
+    @media #{$mq-phone} {
+      tr{
+        width: auto;
+
+      }
     }
 
     td{
@@ -70,7 +81,7 @@ $_notice-error--text-color: palette(static, color--highlight);
       }
 
       .snipcart-customfield-dropdown{
-        margin: 1em;
+        margin-left: 1em;
         label{
           display: none;
         }
@@ -192,13 +203,17 @@ $_notice-error--text-color: palette(static, color--highlight);
 }
 
 .snip-table__body {
-    border-top: $_table-border;
+    // border-top: $_table-border;
     display: table-row-group;
     padding: 1.429em;
 }
 
 .snip-table__body--small {
     background: palette(table, background--highlight);
+
+    td{
+      padding: 0.5em 0.5em 0 0 !important;
+    }
 
     @media #{$mq-medium} {
         padding: .429em 1.429em .429em 2.857em;
@@ -207,6 +222,10 @@ $_notice-error--text-color: palette(static, color--highlight);
 
 .snip-table__body--big {
     font-size: fontsize(table, large);
+
+    td{
+      padding: 0.5em 0.5em 0 0 !important;
+    }
 
     @media #{$mq-medium} {
         padding: 1.222em 1.111em 1.222em 1.222em;

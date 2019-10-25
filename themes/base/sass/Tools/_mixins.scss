@@ -36,6 +36,13 @@ $_reset-form-transition: border .66s ease;
 }
 
 @mixin input-reset {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+
+    font-family: $font-base, system-ui;
     background: palette(form, background);
     border-radius: 3px;
     border: 1px solid palette(form, border);
@@ -46,7 +53,10 @@ $_reset-form-transition: border .66s ease;
     height: auto;
     line-height: 18px;
     margin: 0;
-    padding: .571em .429em;
+    padding: 0.8em .7em !important;
+
+    // padding: .571em .429em !important;
+
     transition: $_reset-form-transition;
     width: 100%;
 

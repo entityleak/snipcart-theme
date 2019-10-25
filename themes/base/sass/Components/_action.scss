@@ -24,7 +24,7 @@ $_action-border: 1px solid palette(layout, border);
     bottom:0;
     right: 0;
     width: $sidebar-width;
-    // border-top: $_action-border;
+    border-top: 1px solid black;
     padding: $padding-small;
 
     // [1]

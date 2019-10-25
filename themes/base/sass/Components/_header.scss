@@ -28,13 +28,18 @@ $_header-total-height: 38px;
     }
 }
 .snip-header {
+
+    min-height: $header-height;
+    font-family: $font-special;
+    font-size: fontsize(header, large);
     @include font-bold;
     background: palette(header, background);
     color: palette(header, color);
     padding: $padding-small;
     position: relative;
     text-align: left;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
 
     @media #{$mq-medium} {
         color: palette(header, color);
@@ -87,8 +92,11 @@ $_header-total-height: 38px;
 
 .snip-header__title {
     display: none;
-    font-size: fontsize(header, large) / 2;
-    text-align: center;
+    font-size: fontsize(header, large);
+    text-align: left;
+    // padding: $padding-small;
+    padding:0.5em 0;
+    position: relative;
 
     // [2]
     &.js-show {
@@ -98,7 +106,7 @@ $_header-total-height: 38px;
     @media #{$mq-medium} {
         display: block;
         font-size: fontsize(header, large);
-        left: 1.25em;
+        // left: 1.25em;
         line-height: $_header-height;
         position: absolute;
         text-align: left;
@@ -109,7 +117,7 @@ $_header-total-height: 38px;
     background: palette(header, background--highlight);
     border-radius: 5px;
     display: inline-block;
-    padding: .5em;
+    padding: .5em 0;
 
     @media #{$mq-medium} {
         height: $_header-total-height;

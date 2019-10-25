@@ -45,7 +45,8 @@ $_form-border: 1px solid palette(form, border);
     color: palette(form, label-color);
     display: block;
     font-size: fontsize(form, small);
-    margin: 0 0 .5em 0;
+    margin: 0 0 1em 0;
+    letter-spacing: 0.01em;
     overflow: hidden;
     text-transform: uppercase;
     cursor: pointer;
@@ -76,6 +77,7 @@ $_form-border: 1px solid palette(form, border);
 }
 
 .snip-form__error {
+  display: none;
     background: palette(error, color);
     border-radius: 3px;
     color: palette(error, text-color--invert);
@@ -87,6 +89,7 @@ $_form-border: 1px solid palette(form, border);
 .snip-form__sq-input {
     @include input-reset;
 }
+
 
 [data-invalid] {
   border-color: palette(error, color) !important;
