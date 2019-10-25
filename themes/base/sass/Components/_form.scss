@@ -87,3 +87,7 @@ $_form-border: 1px solid palette(form, border);
 .snip-form__sq-input {
     @include input-reset;
 }
+
+[data-invalid] {
+  border-color: palette(error, color) !important;
+}
