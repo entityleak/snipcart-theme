@@ -12,14 +12,14 @@ $palettes: (
         link: #999
     ),
     button: (
-        background: #555,
-        background--highlight: #efe778,
-        background--hover: darken(#555, 10%),
+        background: #fff,
+        background--highlight: #000,
+        background--hover:#f1f1f1,
         background--danger: #f10,
         background--danger-hover: darken(#f10, 10%),
-        background--highlight-hover: darken(#efe778, 10%),
-        color: #fff,
-        color--highlight: #222,
+        background--highlight-hover: lighten(#000, 10%),
+        color: #c8c8c8,
+        color--highlight: #fff,
     ),
     error: (
         color: #f10,
@@ -57,35 +57,35 @@ $palettes: (
         label-color: #999
     ),
     header: (
-        background: #222,
-        background--highlight: #111,
-        color: #fff,
-        label-color: #999
+        background: #fff,
+        background--highlight: #fff,
+        color: #000,
+        label-color: #000
     ),
     layout: (
         background: #fff,
         border: #eee,
-        close-color: #fff,
+        close-color: #000,
         color: #999,
         content-background: #f8f8f8,
         content-border: #bbb,
-        loading-color: #333
+        loading-color: #000
     ),
     loader: (
-        background: #222,
-        background--highlight: #efe778
+        background: #fff,
+        background--highlight: #000
     ),
     product: (
         background: #f8f8f8,
         border: #eee,
-        color--error: #f10,
+        color--error: #ccc,
         color--highlight: #333
     ),
     quantity-trigger: (
-        background: #ccc,
-        background--hover: #efe778,
+        background: transparent,
+        background--hover: transparent,
         background--disabled: #eee,
-        color: #111,
+        color: #000,
         color--disabled: #bbb
     ),
     static: (

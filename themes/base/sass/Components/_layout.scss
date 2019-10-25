@@ -34,13 +34,14 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 }
 
 .snip-layout__close {
+
     color: palette(layout, close-color);
     font-size: $_layout-close-font-size * 1.2;
     padding: .333em;
     padding: 0;
     position: absolute;
-    right: .417em;
-    top: .1em;
+    right: .5em;
+    top: .5em;
     z-index: 2;
 
     @media #{$mq-medium} {

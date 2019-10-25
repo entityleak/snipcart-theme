@@ -35,6 +35,9 @@ $_notice-error--text-color: palette(static, color--highlight);
         width: 100%;
         align-items: center;
         display: flex;
+        // border-bottom: 1px solid grey;
+        // border-radius: 50px;
+
       }
     }
 
@@ -55,6 +58,8 @@ $_notice-error--text-color: palette(static, color--highlight);
       display: flex;
       width: $sidebar-width;
       flex-wrap: wrap;
+      position: relative;
+      padding:0.5rem !important;
     }
 
     td{
@@ -83,6 +88,8 @@ $_notice-error--text-color: palette(static, color--highlight);
   // border: 1px solid grey;
   // margin: 1rem;
   border-bottom: 1px solid black;
+  // margin:0.5rem;
+  // border-radius: 50px;
 }
 
 .snip-table {

@@ -30,6 +30,10 @@ $_qt-text-remove: "-";
     display: flex;
     justify-content: center;
     margin: 0 auto;
+
+    &::before{
+      content:'Qty:'
+    }
 }
 
 .snip-quantity-trigger__text {
@@ -65,9 +69,12 @@ $_qt-text-remove: "-";
 
 .snip-quantity-trigger__btn {
     // [2]
+
+    display: none !important ;
+
     background-color: palette(quantity-trigger, background);
     border-radius: 30px;
-    color: inherit;
+    color: #ccc;
     float: left;
     font-size: fontsize(quantity-trigger, large);
     font-weight: 400;
